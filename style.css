@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.location {
+  font-size: 12px;
+  color: #65676B;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-actions {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.card-content {
+  padding: 0 12px 12px;
+}
+
+.likes {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.comments p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.card-footer {
+  display: flex;
+  padding: 12px;
+}
+
+.comment-input {
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+  padding: 8px 1px;
+}
+
+.post-btn {
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.post-btn:hover {
+  background-color: #0081d6;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 480px) {
+  .container {
+      padding: 10px;
+  }
+
+  .card-header {
+      padding: 8px;
+  }
+
+  .avatar {
+      width: 28px;
+      height: 28px;
+  }
+
+  .username, .location {
+      font-size: 12px;
+  }
+
+  .card-actions {
+      padding: 8px;
+  }
+
+  .action-btn {
+      font-size: 20px;
+      margin-right: 12px;
+  }
+
+  .card-content {
+      padding: 0 8px 8px;
+  }
+
+  .comments p {
+      font-size: 12px;
+  }
+
+  .card-footer {
+      padding: 8px;
+  }
+
+  .comment-input {
+      font-size: 12px;
+  }
+
+  .post-btn {
+      padding: 6px 10px;
+      font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+      padding: 15px;
+  }
+}
+
